@@ -1,20 +1,23 @@
 ---
 title: Text-to-speech - Rime vs ElevenLabs
 ---
+Most people's first reaction to hearing an automated voice on the other end of a call is some combination of an exasperated sigh, expletives, or simply hanging up. This is why there is a lot of interest in natural sounding text-to-speech (TTS) models that reduce these knee-jerk reactions from clientele. 
 
-Rime is breaking into the text-to-speech (TTS) space with realistic voice models that are trained by linguists. The following article compares Rime with the more established services from ElevenLabs. It focuses on the quality that you can expect from both providers as well as the user experience (UX) and the cost breakdown. 
+**Rime** is breaking into the TTS space with realistic voice models that are trained by linguists. 
 
-It also looks at the agent experience (AX) for each provider. Similar to UX, this is how easy an AI agent can use the provided service.
+The following article compares Rime's offerings, as of March 2026, with the more established services from ElevenLabs. It focuses on the quality that you can expect from both providers as well as the user experience (UX) and the cost breakdown. 
+
+It also looks at the agent experience (AX) for each provider. Similar to UX, this is how easily an AI agent can use the provided service.
 
 ## Quality
-Both Rime and ElevenLabs have specialized, realistic voice models. Rime focuses on practical applications such as call center automation and support agents. ElevenLabs' focus is more towards content creation flows such as video voice over. 
+Both Rime and ElevenLabs have specialized, realistic voice models. Rime focuses on practical applications such as call center automation and support agents. ElevenLabs' focus is more towards content creation flows such as video voiceover. 
 
-To compare the models directly we ran the same scripts through Rime's Arcana model and Eleven Labs' Eleven V3. 
+The table below has audio clips of the same script being run through Rime's Arcana model and ElevenLabs' Eleven V3. 
 
-Listen to the clips in the table below to compare the TTS offerings from both providers.
+Listen to the clips below to compare the TTS offerings from both providers.
 
 #### Call center greeting
-Professional tone for an automated welcome message.
+Professional tone for an automated welcome message:
 
 | Rime - Arcana | ElevenLabs - Eleven V3 |
 |---|---|
@@ -35,33 +38,36 @@ Accuracy on technical terms, proper nouns, and foreign phrases.
 | <audio controls src="/audio/R-technical.wav" /> | <audio controls src="/audio/EL-technical.mp3" /> |
 
 #### Emotional range
-Transitioning between emotions in a single passage.
+Transitioning between emotions in a single passage:
 
 | Rime - Arcana | ElevenLabs - Eleven V3 |
 |---|---|
 | <audio controls src="/audio/R-emotional-range.wav" /> | <audio controls src="/audio/EL-emotional-range.mp3" /> |
 
 #### Conversational pacing
-Handling pauses, filler words, and self-corrections.
+Handling pauses, filler words, and self-corrections:
 
 | Rime - Arcana | ElevenLabs - Eleven V3 |
 |---|---|
 | <audio controls src="/audio/R-conversational-pace.wav" /> | <audio controls src="/audio/EL-conversation-pace.mp3" /> |
 
 #### Whispering
-Soft, intimate delivery at low volume.
+Soft, intimate delivery at low volume:
 
 | Rime - Arcana | ElevenLabs - Eleven V3 |
 |---|---|
 | <audio controls src="/audio/R-whisper.wav" /> | <audio controls src="/audio/EL-whisper.mp3" /> |
 
-### Multilingual support
+We can hear that ElevenLabs does very well when it comes to emotive language as you may find in a dramatic use-case. Rime shines in the technical clarity and call center examples.
 
-Both Rime and ElevenLabs support multiple different languages with voices trained specifically for each one. 
+### Multilingual and multicultural support
+A lot of the available TTS providers are trained specifically for English. This is a big limitation when it comes to call centers as these may have a wide variation in callers.
 
-ElevenLabs currently supports 32 languages and Rime supports 11 with plans to add more in coming updates. 
+Both Rime and ElevenLabs support multiple different languages and accents with voices trained specifically for each one. 
 
-Both providers allow code-switching, where voices can switch between languages mid conversation.
+ElevenLabs supports 32 languages and Rime supports 11 with plans to add more in coming updates.
+
+Both providers allow code-switching, where voices can switch between languages mid-conversation while maintaining the voice identity.
 
 #### Spanish to English code-switching
 A Spanish native speaker naturally switching between Spanish and English mid-sentence.
@@ -69,6 +75,14 @@ A Spanish native speaker naturally switching between Spanish and English mid-sen
 | Rime - Arcana | ElevenLabs - Eleven V3 |
 |---|---|
 | <audio controls src="/audio/R-codeswitching.wav" /> | <audio controls src="/audio/EL-codeswitching.mp3" /> |
+
+### Latency
+
+Latency is an important consideration when it comes to real-time applications. Higher latency models tend to create a disconnect with a caller even if the voice sounds natural.
+
+Both providers provide low latency responses with their models. This is a big focus for Rime whose latest model offers **sub-200ms** latency on their cloud service and this can be decreased significantly with on-prem or dedicated enterprise solutions.
+
+ElevenLabs also offers a low latency model but this comes at the cost of quality as you are required to use their lightweight model for sub-200ms latency. As their focus is less on real-time use cases, they place less emphasis on latency for their flagship models. 
 
 ## Pricing
 
@@ -82,7 +96,7 @@ The full breakdown for each provider is as follows:
 
 ElevenLabs has 5 pricing tiers with an increasing per month cost. The cheapest tier is \$5 per month which gives you 30 minutes of TTS with their flagship model. On this plan, you cannot top-up your credits so you would need to upgrade to the next tier if you needed more TTS time for a specific month.
 
-The higher tiers, ranging from \$22 to \$1320 per month, allow you to 'pay-as-you-go' with a decreasing cost per credit as you go up the tiers. The cost per minute for these tiers start at \$0.30 per minute at the \$22 dollar tier and decreases to \$0.10 per minute at the highest tier.
+The higher tiers, ranging from \$22 to \$1320 per month, allow you to 'pay-as-you-go' with a decreasing cost per credit as you go up the tiers. The cost per minute for these tiers start at \$0.30 per minute at the \$22 tier and decreases to \$0.10 per minute at the highest tier.
 
 Notably, the ElevenLabs credits can be used across their service suite, so you will have access to more than TTS generation only.
 
@@ -92,9 +106,9 @@ Rime does not have any per month payment structures. With Rime, there are two op
 
 ### Concurrency
 
-Both providers limit the amount of requests you can make for TTS generation at the same time. This can be crucial if your solution has the need to perform multiple conversations in realtime. For example, a customer support call center could require dozens of concurrent requests in order to maintain natural, low-latency conversational flow.
+Both providers limit the amount of requests you can make for TTS generation at the same time. This can be crucial if your solution has the need to perform multiple conversations in real time. For example, a customer support call center could require dozens of concurrent requests in order to maintain natural, low-latency conversational flow.
 
-For Rime, the 'Starter' plan limits you to five concurrent request and this increases to 20 on the 'Growth' plan.
+For Rime, the 'Starter' plan limits you to five concurrent requests and this increases to 20 on the 'Growth' plan.
 
 ElevenLabs gives you a limit of three concurrent requests on its \$5 per month plan. This then increases to five on the next tier, then 10 on the following tier and caps off at 15 on their most expensive plans.
 
@@ -113,7 +127,7 @@ The most comparable payment options between the two providers are the Starter pl
 The onboarding for both providers is quite similar across sign-up, generating audio through a UI, and creating a basic TTS agent.
 
 ### Sign-up
-Both Rime and ElevenLabs allow you to do a one-click sign-up with your Google account. You can also enter an email and password manually for both. Rime also has the options to sign up with Github or a custom SSO.
+Both Rime and ElevenLabs allow you to do a one-click sign-up with your Google account. You can also enter an email and password manually for both. Rime also has the options to sign up with GitHub or a custom SSO.
 
 It is also very simple to create an API key for both through the respective dashboards to allow programmatic interaction with the models.
 
@@ -140,7 +154,7 @@ Rime's docs focus more on a programmatic approach to using their models whereas 
 
 ## Agent Experience
 
-similar to what UX is for humans, AX is a metric that explains how usable a product or service is for an AI agent. For all the below tests we used Anthropic's Claude Sonnet 4.6.
+For the comparison below we used Anthropic's Claude Sonnet 4.6 for all examples.
 
 ### Discoverability  
 
@@ -152,7 +166,7 @@ I want to build a voice agent with a realistic voice. What providers would you r
 
 Both Rime and ElevenLabs showed up in the response. ElevenLabs was the overall preferred model by the agent. The agent described it as: `Best overall realism, voice cloning, multilingual` and with an average model latency of `~300ms`.
 
-Rime came in as option five. Described as `Expressive, good for conversational agents` and with a latency of `~200`.
+Rime came in as option five. Described as `Expressive, good for conversational agents` and with a latency of `~200ms`.
 
 We then prompted the agent to compare the two by telling it:
 
@@ -178,7 +192,7 @@ When to pick ElevenLabs
 - You need expressive, emotional range (e.g.,storytelling, not just Q&A)
 ```
 
-The agent did not pick up the multi-lingual capabilities of Rime but did pickup on the relative costs of each provider.
+The agent did not pick up the multilingual capabilities of Rime but did pickup on the relative costs of each provider.
 
 ### Creating a voice agent with Rime
 
@@ -188,9 +202,9 @@ Next, we prompted the agent to build a voice agent using Rime:
 help me create a voice agent with Rime.
 ```
 
-It started off with some design questions about the our choice of framework, interface, and LLM. And provided a list of options for each.
+It started off with some design questions about our choice of framework, interface, and LLM. And provided a list of options for each.
 
-We choice `LiveKit`, `Web based` and `Anthropic` respectively.
+We chose `LiveKit`, `Web based` and `Anthropic` respectively.
 
 After a couple of minutes the voice agent script was created and the following setup steps were provided.
 
@@ -203,18 +217,17 @@ After a couple of minutes the voice agent script was created and the following s
 
 The biggest friction for the user here is creating the accounts and acquiring the API keys. After this, the code works as expected and you get a working agent that you can have a conversation with in your browser.
 
-
 ### Creating a voice agent with ElevenLabs
 
 We used the same prompts to create the voice agent with ElevenLabs.
 
-When asked to create the agent the initial questions where slightly different. It only asked us to choose a framework and input method. We chose `PipeCat` as `LiveKit` was not provided as an option and chose "microphone" as the desired input.
+When asked to create the agent the initial questions were slightly different. It only asked us to choose a framework and input method. We chose `PipeCat` as `LiveKit` was not provided as an option and chose "microphone" as the desired input.
 
-After about three minutes the agent had finished the code and required API keys for Deepgram, OpenAPI and, ElevenLabs.
+After about three minutes the agent had finished the code and required API keys for Deepgram, OpenAI and, ElevenLabs.
 
 Once provided, the agent attempted to run the script but ran into some errors that triggered more web searches. This then deliberated for another couple of minutes and made some code changes.
 
-Next, the script ran and displayed 'Pipeline ready' but it did respond to speaking.
+Next, the script ran and displayed 'Pipeline ready' but it did not respond to speaking.
 
 After prompting Claude to fix it, it played around for another five minutes, made a few more bug fixes and then declared that the agent was working correctly now. However, the agent still did not respond to input.
 
@@ -222,8 +235,13 @@ Eventually the agent was able to respond but was getting confused with its turn 
 
 ### AX summary
 
-With the non-deterministic behavior of LLMs there is some luck involved when getting a particular scenario working. In this particular test Rime scored much better on the AX metric after Claude easily built a browser based voice agent with the only friction being account setup and the acquisition of API keys.nn 
+With the non-deterministic behavior of LLMs there is some luck involved when getting a particular scenario working. In this particular test Rime scored much better on the AX metric after Claude easily built a browser based voice agent with the only friction being account setup and the acquisition of API keys.
 
 ElevenLabs scored much lower as Claude struggled to get a working voice agent and it was still buggy after several attempts.
 
 These results are probably due to Rime's simplicity and focus on programmatic integrations. ElevenLabs has extensive docs and prefers users to interact with its proprietary UI.
+
+
+## Conclusion
+
+If you are looking for an alternative to ElevenLabs, Rime's models can be easily integrated into existing systems. Rime has some of the best sounding voices in the space and is constantly iterating and improving. Rime's models also hold the best latency-to-quality ratio on the market, making it ideal for real-time conversational use-cases.   
