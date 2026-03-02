@@ -4,51 +4,51 @@ title: Text-to-speech - Rime vs ElevenLabs
 
 Rime is breaking into the text-to-speech (TTS) space with realistic voice models that are trained by linguists. The following article compares Rime with the more established services from ElevenLabs. It focuses on the quality that you can expect from both providers as well as the user experience (UX) and the cost breakdown. 
 
-It also looks at the agent experience (AX) for each provider. Similar to UX, this is how easy an AI agent finds it to use the provided service.
+It also looks at the agent experience (AX) for each provider. Similar to UX, this is how easy an AI agent can use the provided service.
 
 ## Quality
-Both Rime and ElevenLabs have specialized realistic voice models. Rime focuses on practical applications such as call center automation or support agents. ElevenLabs' focus is more towards content creation flows such as video voice over. 
+Both Rime and ElevenLabs have specialized, realistic voice models. Rime focuses on practical applications such as call center automation and support agents. ElevenLabs' focus is more towards content creation flows such as video voice over. 
 
 To compare the models directly we ran the same scripts through Rime's Arcana model and Eleven Labs' Eleven V3. 
 
 Listen to the clips in the table below to compare the TTS offerings from both providers.
 
-### Call center greeting
-Warm, professional tone for an automated welcome message.
+#### Call center greeting
+Professional tone for an automated welcome message.
 
 | Rime - Arcana | ElevenLabs - Eleven V3 |
 |---|---|
 | <audio controls src="/audio/R-call-center.wav" /> | <audio controls src="/audio/El-call-center.mp3" /> |
 
-### Instructional clarity
+#### Instructional clarity
 Conveying structure, emphasis, and a how-to tone.
 
 | Rime - Arcana | ElevenLabs - Eleven V3 |
 |---|---|
 | <audio controls src="/audio/R-instructional.wav" /> | <audio controls src="/audio/EL-instructional.mp3" /> |
 
-### Technical pronunciation
+#### Technical pronunciation
 Accuracy on technical terms, proper nouns, and foreign phrases.
 
 | Rime - Arcana | ElevenLabs - Eleven V3 |
 |---|---|
 | <audio controls src="/audio/R-technical.wav" /> | <audio controls src="/audio/EL-technical.mp3" /> |
 
-### Emotional range
+#### Emotional range
 Transitioning between emotions in a single passage.
 
 | Rime - Arcana | ElevenLabs - Eleven V3 |
 |---|---|
 | <audio controls src="/audio/R-emotional-range.wav" /> | <audio controls src="/audio/EL-emotional-range.mp3" /> |
 
-### Conversational pacing
+#### Conversational pacing
 Handling pauses, filler words, and self-corrections.
 
 | Rime - Arcana | ElevenLabs - Eleven V3 |
 |---|---|
 | <audio controls src="/audio/R-conversational-pace.wav" /> | <audio controls src="/audio/EL-conversation-pace.mp3" /> |
 
-### Whispering
+#### Whispering
 Soft, intimate delivery at low volume.
 
 | Rime - Arcana | ElevenLabs - Eleven V3 |
@@ -62,6 +62,13 @@ Both Rime and ElevenLabs support multiple different languages with voices traine
 ElevenLabs currently supports 32 languages and Rime supports 11 with plans to add more in coming updates. 
 
 Both providers allow code-switching, where voices can switch between languages mid conversation.
+
+#### Spanish to English code-switching
+A Spanish native speaker naturally switching between Spanish and English mid-sentence.
+
+| Rime - Arcana | ElevenLabs - Eleven V3 |
+|---|---|
+| <audio controls src="/audio/R-codeswitching.wav" /> | <audio controls src="/audio/EL-codeswitching.mp3" /> |
 
 ## Pricing
 
@@ -215,7 +222,7 @@ Eventually the agent was able to respond but was getting confused with its turn 
 
 ### AX summary
 
-With the non-deterministic behavior of LLMs there is some luck involved when getting a particular scenario working. In this particular test Rime scored much better on the AX metric after Claude easily built a browser based voice agent with the only friction being account setup and the acquisition of API keys.
+With the non-deterministic behavior of LLMs there is some luck involved when getting a particular scenario working. In this particular test Rime scored much better on the AX metric after Claude easily built a browser based voice agent with the only friction being account setup and the acquisition of API keys.nn 
 
 ElevenLabs scored much lower as Claude struggled to get a working voice agent and it was still buggy after several attempts.
 
