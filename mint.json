@@ -102,7 +102,8 @@
             "docs/signalwire",
             "docs/together-ai",
             "docs/vapi",
-            "docs/videosdk"
+            "docs/videosdk",
+            "docs/openclaw"
           ]
         },
         "docs/privacy-compliance",
@@ -113,6 +114,12 @@
           "icon": "magnifying-glass-chart",
           "pages": ["platform/speech-qa", "platform/check-coverage"]
         }
+      ]
+    },
+    {
+      "group": "Comparisons",
+      "pages": [
+        "docs/comparisons/rime-vs-elevenlabs"
       ]
     },
     {
